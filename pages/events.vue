@@ -1,12 +1,12 @@
 <template>
   <v-container class="event__wrapper" >
-	<v-btn color="orange" class="mb-10 add">Добавить событие</v-btn>
+	<v-btn color="orange" class="mb-10 add">Новое событие</v-btn>
 	<v-row>
 		<v-col class="d-flex align-stretch justify-md-space-around flex-wrap">
 			<v-card color="orange" width="300" class="mb-15 ml-10"
 			v-for="event in eventsList" :key="event.id" :event="event"
 			>
-				<v-card-title>Событие {{ event.id }}</v-card-title>
+				<v-card-title class="heading">Событие №{{ event.id }}</v-card-title>
 				
 				<v-card-text> Тип: {{ event.type }} </v-card-text>
 				<v-card-text> Дата: {{ event.date }} </v-card-text>
@@ -53,7 +53,11 @@ export default {
      align-items: center;
   }
 .add {
+    margin-top: 70px;
     max-width: 400px;
     font-size: 18px;
 }
+    .heading {
+        font-weight: 600;
+    }
 </style>
