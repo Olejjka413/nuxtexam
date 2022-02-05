@@ -15,7 +15,7 @@
           <p class="text-center ml-5">Зарегистрировано погодных событий: 
             <span class="font-weight-bold h3">{{ eventsCount.events }}</span>
           </p>
-          <v-img :src="require('~/static/left_widget_img.jpg')" width="250px" class="ml-auto mr-auto"></v-img>
+          <v-img :src="require('~/static/left_widget_img.jpg')" width="285px" height="190px" class="ml-5"></v-img>
         </div>
       </v-col>
       <v-col class="col-10 col-sm-6 col-md-8">
